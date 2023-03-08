@@ -1,28 +1,38 @@
-local L_1_
-local L_2_ = loadstring(game:HttpGet('https://raw.githubusercontent.com/PandaHubRoblox/PandaHubFE2/main/Key'))()
+    local input
+local key = loadstring(game:HttpGet('https://raw.githubusercontent.com/PandaHubRoblox/PandaHubFE2/main/Key'))()
 
 
 function begin()
-	rconsoleprint('@@WHITE@@')
-	rconsolename("Panda Hub")
-	rconsoleprint("Testors only \n")
-	rconsoleprint("Enter Key: ")
-	L_1_ = rconsoleinput()
-	if L_1_ == L_2_ then
-		rconsoleclear()
-		rconsoleprint('@@LIGHT_GREEN@@')
-		rconsolename("Panda Hub")
-		rconsoleprint("Welcome!\n")
-		rconsoleprint("Starting Script")
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/PandaHubRoblox/PandaHubFE2/main/PandaHubFE2"))()
-	elseif L_1_ ~= L_2_ then
-		rconsoleprint("@@RED@@")
-		rconsoleprint("Incorrect Key!\n")
-		rconsolename("Wrong key!")
-		wait(2)
-		rconsoleclear()
-		begin()
-	end
+    rconsoleprint('@@CYAN@@')
+    rconsolename("Key System")
+    rconsoleprint("[INFO] Checking Executor.\n")
+   wait(1)
+    rconsoleprint("[INFO] Loading In Background. \n")
+    wait(1)
+    rconsoleprint("[INFO] Scanning. \n")
+    wait(1)
+    rconsoleprint('@@LIGHT_GREEN@@')
+    rconsoleprint("[KEY]  please get a key here: Testor \n")
+    rconsoleprint("[KEY]  please enter your key: ")
+    input = rconsoleinput()
+
+    if input == key then
+        rconsoleclear()
+        rconsoleprint('@@LIGHT_GREEN@@')
+        rconsolename("Panda Hub BETA")
+        rconsoleprint("[PH] Welcome!\n")
+         rconsoleprint("[PH] Script Successfully Started \n")
+         rconsoleprint("[PH] Thank you for using Panda Hub!")
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/PandaHubRoblox/PandaHubFE2/main/PandaHubFE2"))()
+
+    elseif input ~= key then
+        rconsoleprint("@@RED@@")
+        rconsoleprint("Incorrect Key!\n")
+        rconsolename("Wrong key!")
+        wait(2)
+        rconsoleclear()
+            begin()
+    end
 end
 
 begin()
