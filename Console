@@ -1,1 +1,28 @@
-local a;local b=loadstring(game:HttpGet('https://raw.githubusercontent.com/PandaHubRoblox/PandaHubFE2/main/Key'))()function begin()rconsoleprint('@@WHITE@@')rconsolename("Panda Hub")rconsoleprint("Testors only \n")rconsoleprint("Enter Key: ")a=rconsoleinput()if a==b then rconsoleclear()rconsoleprint('@@LIGHT_GREEN@@')rconsolename("Panda Hub")rconsoleprint("Welcome!\n")rconsoleprint("Starting Script")loadstring(game:HttpGet("https://raw.githubusercontent.com/PandaHubRoblox/PandaHubFE2/main/PandaHubFE2"))()elseif a~=b then rconsoleprint("@@RED@@")rconsoleprint("Incorrect Key!\n")rconsolename("Wrong key!")wait(2)rconsoleclear()begin()end end;begin()
+local L_1_
+local L_2_ = loadstring(game:HttpGet('https://raw.githubusercontent.com/PandaHubRoblox/PandaHubFE2/main/Key'))()
+
+
+function begin()
+	rconsoleprint('@@WHITE@@')
+	rconsolename("Panda Hub")
+	rconsoleprint("Testors only \n")
+	rconsoleprint("Enter Key: ")
+	L_1_ = rconsoleinput()
+	if L_1_ == L_2_ then
+		rconsoleclear()
+		rconsoleprint('@@LIGHT_GREEN@@')
+		rconsolename("Panda Hub")
+		rconsoleprint("Welcome!\n")
+		rconsoleprint("Starting Script")
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/PandaHubRoblox/PandaHubFE2/main/PandaHubFE2"))()
+	elseif L_1_ ~= L_2_ then
+		rconsoleprint("@@RED@@")
+		rconsoleprint("Incorrect Key!\n")
+		rconsolename("Wrong key!")
+		wait(2)
+		rconsoleclear()
+		begin()
+	end
+end
+
+begin()
